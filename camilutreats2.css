@@ -131,7 +131,7 @@ body.dark-mode #darkModeToggle {
 }
 
 .hero-title {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: var(--accent);
     margin-bottom: 0.5rem;
@@ -192,7 +192,7 @@ body.dark-mode #darkModeToggle {
 }
 
 .about-img {
-    width: 220px;
+    width: 320px;
     border-radius: var(--radius);
     margin: 1.5rem 0;
     box-shadow: 0 4px 16px rgba(219, 184, 176, 0.13);
@@ -211,6 +211,32 @@ body.dark-mode #darkModeToggle {
     line-height: 1.8;
     color: var(--dark-gray);
 }
+
+.benefits-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2.5rem 0;
+}
+.benefits-inline li {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.benefit-heart {
+    color: #E89BB5;
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+    user-select: none;
+}
+
 
 .benefits {
     list-style: none;
@@ -445,26 +471,6 @@ footer {
         gap: 1rem;
         padding: 1rem 1rem;
     }
-    .nav-links {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .hero-title {
-        font-size: 2rem;
-    }
-    .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-}
-@media (max-width: 600px) {
-    .custom-navbar {
-        padding: 0.5rem 0.5rem;
-    }
     .logo-img {
         height: 40px;
     }
@@ -490,3 +496,4 @@ footer {
         font-size: 0.85rem;
     }
 }
+
