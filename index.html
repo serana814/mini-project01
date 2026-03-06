@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamiLu Treats | Homemade Granola</title>
+    <meta name="description" content="Delicious, healthy, homemade granola from CamiLu Treats. Explore our products, meet the founders, and place your order!">
+    <meta property="og:title" content="CamiLu Treats | Homemade Granola">
+    <meta property="og:description" content="Delicious, healthy, homemade granola from CamiLu Treats. Explore our products, meet the founders, and place your order!">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="camilutreats2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brittany+Signature&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="custom-navbar">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="CamiLu Treats Logo" class="logo-img">
+                <span class="logo">CamiLu Treats</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="faded-bg">
+                <h1 class="hero-title">Welcome to<br>CamiLu Treats!</h1>
+                <p class="hero-subtitle">Delicious, healthy, homemade granola made with love.</p>
+                <p class="hero-description">Discover our range of fresh, wholesome granola treats, crafted by young entrepreneurs with a passion for quality and flavor. Scroll down to explore our products and meet the team!</p>
+                <a href="#contact" class="cta-button">Click to Order</a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <img src="images/founders.jpeg" alt="CamiLu Treats Founders" class="about-img">
+                <p>CamiLu Treats is a family-run business founded by two young cousins, Camila and Luciana, who have perfected their homemade granola recipe over the years. Our mission is to spread joy and health through every bite!</p>
+                <ul class="benefits-inline" aria-label="Key Benefits">
+                    <li>Homemade with love</li>
+                    <span class="benefit-heart" aria-hidden="true">&#10084;&#65039;</span>
+                    <li>All-natural ingredients</li>
+                    <span class="benefit-heart" aria-hidden="true">&#10084;&#65039;</span>
+                    <li>Perfect for all ages</li>
+                </ul>
+            </div>
+        </section>
+        <section id="products" class="products">
+            <h2>Our Granola</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/granola-original.png" alt="Original Granola">
+                    <h3>Original Granola</h3>
+                    <p class="description">Classic blend of oats, nuts, and honey. Crunchy, golden, and perfect for breakfast or snacking!</p>
+                    <span class="price">$12.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/granola-berry.png" alt="Berry Granola">
+                    <h3>Berry Granola</h3>
+                    <p class="description">A fruity twist with dried berries and seeds. Sweet and tangy!</p>
+                    <span class="price">$12.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/granola-chocolate.png" alt="Chocolate Granola">
+                    <h3>Chocolate Granola</h3>
+                    <p class="description">Rich cocoa, crunchy nuts, and a hint of vanilla. A treat for chocolate lovers!</p>
+                    <span class="price">$12.00</span>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-list">
+                <blockquote>
+                    <p>“Absolutely delicious! My kids love it and I feel good about giving it to them.”</p>
+                    <cite>– Maria G.</cite>
+                </blockquote>
+                <blockquote>
+                    <p>“The berry granola is my favorite breakfast treat. Highly recommend!”</p>
+                    <cite>– Luis R.</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="#" method="post" autocomplete="on" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="40" placeholder="Your Name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@email.com">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required minlength="10" maxlength="500" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 CamiLu Treats. Made with <span class="heart">♥</span> by young entrepreneurs.</p>
+            <p>Contact: <a href="mailto:camilutreats@gmail.com">camilutreats@gmail.com</a></p>
+        </div>
+    </footer>
+    <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+    </script>
+</body>
+</html>
