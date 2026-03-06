@@ -1,0 +1,492 @@
+/* CamiLu Treats - Modern Pink Granola Theme */
+:root {
+    --primary-pink: #DBB8B0;
+    --secondary-blue: #1A223F;
+    --background: #F7EFEA;
+    --white: #FFFFFF;
+    --dark-gray: #333333;
+    --accent: #E89BB5;
+    --shadow: 0 6px 24px rgba(219, 184, 176, 0.18);
+    --radius: 22px;
+    --transition: all 0.3s cubic-bezier(.4,1,.7,1);
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: var(--dark-gray);
+    background: var(--background);
+    margin: 0;
+    transition: background 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+    background: var(--secondary-blue);
+    color: var(--white);
+}
+
+header {
+    background: linear-gradient(90deg, var(--accent) 0%, var(--primary-pink) 100%);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.custom-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    background: transparent;
+}
+
+.logo {
+    font-size: 2.3rem;
+    font-family: 'Brittany Signature', cursive, sans-serif;
+    color: var(--white);
+    letter-spacing: 0.03em;
+    text-shadow: 0 2px 8px rgba(219, 184, 176, 0.12);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.2rem;
+    list-style: none;
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem 1.2rem;
+    border-radius: 18px;
+    letter-spacing: 0.02em;
+}
+
+.nav-links a:hover {
+    background-color: #fff3f8;
+    color: var(--accent);
+    transform: translateY(-2px) scale(1.07);
+    box-shadow: 0 2px 8px rgba(219, 184, 176, 0.12);
+}
+
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 0.5rem;
+}
+#darkModeToggle:focus {
+    outline: 2px solid var(--accent);
+}
+body.dark-mode #darkModeToggle {
+    color: var(--accent);
+}
+
+.hero {
+    background: url('images/granola-header.jpg') center/cover no-repeat;
+    position: relative;
+    padding: 7rem 2rem 6rem 2rem;
+    text-align: center;
+    color: var(--accent);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faded-bg {
+    background: rgba(255,255,255,0.92);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(219, 184, 176, 0.13);
+    padding: 3.5rem 2.5rem 4.5rem 2.5rem;
+    max-width: 650px;
+    margin: 3rem auto;
+    border: 1.5px solid #f3e3de;
+}
+
+.hero-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--primary-pink);
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2.2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--dark-gray);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--primary-pink) 100%);
+    color: var(--white);
+    padding: 1.1rem 2.7rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(219, 184, 176, 0.13);
+    letter-spacing: 0.03em;
+}
+
+.cta-button:hover {
+    background: var(--white);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(219, 184, 176, 0.18);
+}
+
+.about {
+    padding: 4rem 2rem;
+    background: var(--background);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-img {
+    width: 220px;
+    border-radius: var(--radius);
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 16px rgba(219, 184, 176, 0.13);
+}
+
+.about h2 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: var(--dark-gray);
+}
+
+.benefits {
+    list-style: none;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px rgba(219, 184, 176, 0.10);
+    border: 1.5px solid #f3e3de;
+    display: inline-block;
+    text-align: left;
+}
+
+.benefits li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    border-bottom: 1px solid var(--primary-pink);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.benefits li:last-child {
+    border-bottom: none;
+}
+
+.products {
+    padding: 4rem 2rem;
+    background-color: var(--background);
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--accent);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(219, 184, 176, 0.10);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.2rem;
+    border: 1.5px solid #f3e3de;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(219, 184, 176, 0.18);
+}
+
+.product-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: contain;
+    border-bottom: 4px solid var(--primary-pink);
+    background: #fff;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.product-card h3 {
+    color: var(--accent);
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.product-card .price {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-pink);
+}
+
+.product-card .description {
+    padding: 0 1.5rem;
+    font-size: 1.05rem;
+    color: var(--dark-gray);
+    flex-grow: 1;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.testimonials {
+    padding: 4rem 2rem;
+    background: var(--background);
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial-list blockquote {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 12px rgba(219, 184, 176, 0.10);
+    padding: 2rem 2.5rem;
+    font-style: italic;
+    color: var(--dark-gray);
+    border-left: 5px solid var(--primary-pink);
+    margin: 0;
+}
+
+.testimonial-list cite {
+    display: block;
+    margin-top: 1rem;
+    color: var(--accent);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contact {
+    padding: 4rem 2rem;
+    background: var(--background);
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 12px rgba(219, 184, 176, 0.10);
+    border: 1.5px solid #f3e3de;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem 1rem;
+    border: 1.5px solid var(--primary-pink);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: var(--dark-gray);
+    transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 2px solid var(--accent);
+    outline: none;
+}
+
+.contact-form button {
+    background: linear-gradient(90deg, var(--accent) 0%, var(--primary-pink) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+
+.contact-form button:hover {
+    background: var(--white);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px rgba(219, 184, 176, 0.18);
+}
+
+footer {
+    background: linear-gradient(90deg, var(--accent) 0%, var(--primary-pink) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    font-size: 1.05rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.heart {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .custom-navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .custom-navbar {
+        padding: 0.5rem 0.5rem;
+    }
+    .logo-img {
+        height: 40px;
+    }
+    .hero {
+        padding: 3rem 1rem;
+    }
+    .hero-title {
+        font-size: 1.3rem;
+    }
+    .faded-bg {
+        padding: 2rem 1rem 2.5rem 1rem;
+    }
+    .product-card img {
+        height: 180px;
+    }
+    .about-img {
+        width: 120px;
+    }
+    .contact-form {
+        padding: 1.2rem 0.5rem;
+    }
+    .footer-content p {
+        font-size: 0.85rem;
+    }
+}
